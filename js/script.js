@@ -44,11 +44,19 @@ Hide the element with the id of hide.*/
 const firstHeading = document.querySelector("h3");
 firstHeading.innerHTML = "Hello";
 firstHeading.style.color = "green";
+//firstHeading.style.marginBottom = "100px" just to test the margin style
 
 //Q2
 const underHeadings = document.querySelectorAll("h4");
-underHeadings.innerHTML = "this is a test";
+console.log(underHeadings);
+
+for (let i = 0; i < underHeadings.length; i++) {
+    console.log(underHeadings[i].style.marginBottom = "-20px")
+}
+
+
+//underHeadings.innerHTML = "this is a test";
 
 //firstHeading.style.colour = "blue"
 //.margin-bottom = "-20px";
-// do I have to loop it because it is going trough several elements? 
+// do I have to loop it because it is going trough several elements? YES!!!
