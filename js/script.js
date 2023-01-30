@@ -44,7 +44,7 @@ Hide the element with the id of hide.*/
 const firstHeading = document.querySelector("h3");
 firstHeading.innerHTML = "Hello";
 firstHeading.style.color = "green";
-//firstHeading.style.marginBottom = "100px" just to test the margin style
+//firstHeading.style.marginBottom = "100px" just to test the  style.margin
 
 //Q2
 const underHeadings = document.querySelectorAll("h4");
@@ -54,9 +54,27 @@ for (let i = 0; i < underHeadings.length; i++) {
     console.log(underHeadings[i].style.marginBottom = "-20px")
 }
 
-
 //underHeadings.innerHTML = "this is a test";
-
 //firstHeading.style.colour = "blue"
 //.margin-bottom = "-20px";
 // do I have to loop it because it is going trough several elements? YES!!!
+
+//Q3
+//document.querySelector(".two");
+underHeadings[1].style.background = "red";
+
+//Q4
+
+const paragraphOne = document.querySelector("p.section.one");
+paragraphOne.style.fontSize = "24px";
+paragraphOne.style.color = "blue";
+
+//console.log(document.querySelector = "h3");
+//I think I HAVE to daclare? the element I want with a variable name in order to slect the element?
+//Do I first have to make the element I want a valid selector?
+//i want to select it by its class but how, i forgot teh backticks!
+
+//Q5
+
+//const paragraphThree = document.querySelector("p.section.three");
+//paragraphThree.innerHTML = 
