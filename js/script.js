@@ -101,4 +101,18 @@ paragraphThree.innerHTML = `<span>${paragraphThree.innerHTML}</span>`;
 // I didn't know that I should put innerHTML after the = aswell :D
 
 
-//Q6
+//Q6 Add a new paragraph to the div with a class of content. Add the paragraph after the others.
+//like where they add elephant to the listed items?
+const divBox = document.querySelector (".content");
+//console.log(divBox.innerhtml);
+divBox.innerHTML = divBox.innerHTML + "<p>new paragraph</p>";
+console.log(divBox.innerHTML);
+
+//or
+//content.innerHTML += "<p>Another paragraph</p>";
+// += means keep the current value, AND include this new value
+
+
+
+
+
