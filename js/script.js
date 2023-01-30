@@ -59,13 +59,16 @@ for (let i = 0; i < underHeadings.length; i++) {
 //.margin-bottom = "-20px";
 // do I have to loop it because it is going trough several elements? YES!!!
 
+
 //Q3
+
 //document.querySelector(".two");
 underHeadings[1].style.background = "red";
 
+
 //Q4
 
-const paragraphOne = document.querySelector("p.section.one");
+const paragraphOne = document.querySelector(".section.one");
 paragraphOne.style.fontSize = "24px";
 paragraphOne.style.color = "blue";
 
@@ -74,7 +77,28 @@ paragraphOne.style.color = "blue";
 //Do I first have to make the element I want a valid selector?
 //i want to select it by its class but how, i forgot teh backticks!
 
+
 //Q5
 
-//const paragraphThree = document.querySelector("p.section.three");
-//paragraphThree.innerHTML = 
+const paragraphThree = document.querySelector(".section.three");
+//paragraphThree.style.color = "aqua" ...just to test if the element is a valid selector
+
+//paragraphThree.innerHTML = "<span>" + paragraphThree.innerHTML + "</span>";
+
+paragraphThree.innerHTML = `<span>${paragraphThree.innerHTML}</span>`;
+
+//Do I have to add span "manually" in the html? no, should be doable in js
+//why are neither of these working :(
+
+//fra fasiten:
+
+//const thirdParagraph = document.querySelector(".section.three");
+//thirdParagraph.innerHTML = "<span>" + thirdParagraph.innerHTML + "</span>";
+
+// or
+// thirdParagraph.innerHTML = `<span>${thirdParagraph.innerHTML}</span>`;
+
+// I didn't know that I should put innerHTML after the = aswell :D
+
+
+//Q6
