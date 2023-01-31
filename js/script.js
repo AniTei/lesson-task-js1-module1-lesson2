@@ -130,6 +130,7 @@ for (let i = 0; i < boxParagraphs.length; i++) {
     console.log(boxParagraphs[i].className = "content-item");
 }
 
+//could also have used classList.add
 
 // IT WORKED! when console logging the variable name all the <p>s show up in an array! now I can loop trough it :D
 // I am able to select the first p, but not if using All selector?
@@ -163,6 +164,8 @@ ulElement.innerHTML = "<li> new item to list </li>" + ulElement.innerHTML;
 //Programmatically remove the class from the ul element.
 
 ulElement.classList.remove ("service-list");
+
+//dont need dot in front of class name, bc you alredy stated its a class
 
 //Q10
 //Hide the element with the id of hide.
