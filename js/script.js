@@ -101,7 +101,8 @@ paragraphThree.innerHTML = `<span>${paragraphThree.innerHTML}</span>`;
 // I didn't know that I should put innerHTML after the = aswell :D
 
 
-//Q6 Add a new paragraph to the div with a class of content. Add the paragraph after the others.
+//Q6 
+//Add a new paragraph to the div with a class of content. Add the paragraph after the others.
 //like where they add elephant to the listed items?
 const divBox = document.querySelector (".content");
 //console.log(divBox.innerhtml);
@@ -111,6 +112,69 @@ console.log(divBox.innerHTML);
 //or
 //content.innerHTML += "<p>Another paragraph</p>";
 // += means keep the current value, AND include this new value
+
+//Q7
+// se video fra ca 18 min
+//Add a new class called content-item to each paragraph in the div with a class of content.
+
+//use loop?
+//for (i = 0; i < divBox.length; i++) {
+   // divBox.p = classof (content-item)
+//}
+
+const boxParagraphs = document.querySelectorAll(".content p");
+//boxParagraphs.style.color = "red";
+//boxParagraphs.className = "firstPOfBox";
+console.log(boxParagraphs);
+for (let i = 0; i < boxParagraphs.length; i++) {
+    console.log(boxParagraphs[i].className = "content-item");
+}
+
+
+// IT WORKED! when console logging the variable name all the <p>s show up in an array! now I can loop trough it :D
+// I am able to select the first p, but not if using All selector?
+// I was able to set a class for the first <p>
+//I tried to make it a selector by class and tag, but not working
+//madeClass.className = "content-item";
+//divBox.p.className = "content-item"; 
+
+//so I magaged to attach classes to the <p>s, but now they are green and capiytal?
+//OH the class already had styling in the .css :D 
+
+
+//Q8
+// Select the ul element on the page by its id, and add a new list item to the beginning of the list.
+
+const ulElement = document.querySelector ("#services");
+
+console.log(ulElement);
+
+//const liItems = document.querySelectorAll ("#services li")
+//console.log (liItems);
+
+ulElement.innerHTML = "<li> new item to list </li>" + ulElement.innerHTML;
+
+//ulElemen<li> new item to list </li>
+// So appearently you have to use the parent of the list to add to the list, i forgot
+
+
+
+//Q9
+//Programmatically remove the class from the ul element.
+
+ulElement.classList.remove ("service-list");
+
+//Q10
+//Hide the element with the id of hide.
+
+const hiding = document.querySelector ("#hide");
+hiding.style.display = "none";
+
+// almost figured it out by myself, but w some help from google I finished !!!
+
+
+
+
 
 
 
